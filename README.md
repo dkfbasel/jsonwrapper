@@ -44,7 +44,7 @@ func main() {
 ## Roadmap
 - [x] Add functions to marshal/unmarshal wrapped responses directly
 - [ ] Add a global configuration option to toggle wrapping for all responses
-- [ ] Add a convenience function to generate a http-response directly from the repspone (using the status code provided)
+- [ ] Add a convenience function to generate a http-response directly from the response (using the status code provided)
 
 ## License
 MIT - feel free to use.
