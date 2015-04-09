@@ -10,13 +10,12 @@ JSON responses are wrapped in a struct containing a code (http-status-code) as i
 a status (success, fail, error), an optional message for responses with status fail or error
 and the data containing the actual payload.
 
-*From http://www.restapitutorial.com*
-
-Basically, current best practice is to wrap regular (non-JSONP) responses with the following properties:
-- **code** – contains the HTTP response status code as an integer.
-- **status** – contains the text: “success”, “fail”, or “error”. Where “fail” is for HTTP status response values from 500-599, “error” is for statuses 400-499, and “success” is for everything else (e.g. 1XX, 2XX and 3XX responses).
-- **message** – only used for “fail” and “error” statuses to contain the error message. For internationalization (i18n) purposes, this could contain a message number or code, either alone or contained within delimiters.
-- **data** – that contains the response body. In the case of “error” or “fail” statuses, this contains the cause, or exception name.
+*From http://www.restapitutorial.com:*
+> Basically, current best practice is to wrap regular (non-JSONP) responses with the following properties:
+> - **code** – contains the HTTP response status code as an integer.
+> - **status** – contains the text: “success”, “fail”, or “error”. Where “fail” is for HTTP status response values from 500-599, “error” is for statuses 400-499, and “success” is for everything else (e.g. 1XX, 2XX and 3XX responses).
+> - **message** – only used for “fail” and “error” statuses to contain the error message. For internationalization (i18n) purposes, this could contain a message number or code, either alone or contained within delimiters.
+> - **data** – that contains the response body. In the case of “error” or “fail” statuses, this contains the cause, or exception name.
 
 ## Usage
 ```go
@@ -47,7 +46,7 @@ func main() {
 - [ ] Add a global configuration option to toggle wrapping for all responses
 - [ ] Add a convenience function to generate a http-response directly from the repspone (using the status code provided)
 
-## LICENSE
+## License
 MIT - feel free to use.
 
 ## Contribute
