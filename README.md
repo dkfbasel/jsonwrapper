@@ -33,8 +33,8 @@ func main() {
 	// get a wrapped successful response (other options are error and fail)
 	response := jsonwrapper.Success([]string{"test", "data"})
 
-	// marshal to json
-	marshalled, _ := json.Marshal(response)
+	// marshal to json as byte-slice (marshalling to string included as well)
+	marshalled, _ := jsonwrapper.ToJsonBytes(&response)
 
 	// print as json string (or write to http response-writer)
 	fmt.Printf("%s\n", marshalled)
