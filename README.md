@@ -42,7 +42,7 @@ func main() {
 }
 ```
 ## Roadmap
-- [ ] Add functions to marshal/unmarshal wrapped responses directly
+- [x] Add functions to marshal/unmarshal wrapped responses directly
 - [ ] Add a global configuration option to toggle wrapping for all responses
 - [ ] Add a convenience function to generate a http-response directly from the repspone (using the status code provided)
 
