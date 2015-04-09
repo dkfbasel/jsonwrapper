@@ -11,6 +11,7 @@ a status (success, fail, error), an optional message for responses with status f
 and the data containing the actual payload.
 
 *From http://www.restapitutorial.com*
+
 Basically, current best practice is to wrap regular (non-JSONP) responses with the following properties:
 - **code** – contains the HTTP response status code as an integer.
 - **status** – contains the text: “success”, “fail”, or “error”. Where “fail” is for HTTP status response values from 500-599, “error” is for statuses 400-499, and “success” is for everything else (e.g. 1XX, 2XX and 3XX responses).
